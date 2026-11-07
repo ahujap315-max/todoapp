@@ -70,8 +70,6 @@ function displaytasks(){
         tasklist.appendChild(li);
     });
 }
-
-
 addbtn.addEventListener("click" , ()=> {
     const text = taskinput.value.trim();
 
