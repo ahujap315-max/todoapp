@@ -1,0 +1,79 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    /* box sizing : border-box means that padding is added to the width and height of the element */
+}
+
+body {
+    font-family :Arial, Helvetica, sans-serif;
+    background : grey;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    min-height : 100vh;
+}
+
+.container {
+    background : white;
+    width: 400px;
+    padding: 25px;
+    border-radius : 12px;
+    box-shadow : 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom : 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    gap : 10px;
+}
+
+input {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius : 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+/* completed class is not in html code but it still written becuase it is written by javascript dynamically*/
+.delete-btn {
+    background: #dc3545;
+}
