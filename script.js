@@ -70,6 +70,8 @@ function displaytasks(){
         tasklist.appendChild(li);
     });
 }
+
+
 addbtn.addEventListener("click" , ()=> {
     const text = taskinput.value.trim();
 
@@ -86,7 +88,7 @@ addbtn.addEventListener("click" , ()=> {
     savetasks();
     displaytasks();
 
-    taskinput.value = "";
+     taskinput.value = "";
 });
 
 taskinput.addEventListener("keydown" , (event) =>{
